@@ -1,0 +1,48 @@
+// .exchange-rate__list-title{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-left: auto;
+//     margin-right: auto;
+//     // gap: 30px;
+// }
+// .exchange-rate__title-item {
+//     font-size: 15px;
+//     font-weight: 300;
+//     text-transform: uppercase;
+//     color: $main-txt-cl;
+// margin-bottom: 10px;
+// }
+
+
+.exchange-rate__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.exchange-rate__item{
+    font-size: 30px;
+    font-weight: 700;
+    color: $list-txt-cl;
+    @include flex-calc($indent, $elements: 3);
+    margin-bottom: 10px;
+    @media screen and (min-width: $tablet) {
+        font-size: 40px;
+    }
+}
+
+.exchange-rate__currency-item{
+    font-size: 30px;
+    font-weight: 700;
+    color: $main-txt-cl;
+    margin-bottom: 10px;
+    @include flex-calc($indent, $elements: 3);
+        @media screen and (min-width: $tablet) {
+                font-size: 40px;
+            }
+}
+

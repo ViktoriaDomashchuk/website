@@ -1,0 +1,48 @@
+.header__container{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.header__description{
+    display: block;
+    margin-left: 30px;
+    width: 167px;
+    height: auto;
+    @media screen and (min-width: $desktop) {
+            width: auto;
+    }
+}
+
+.header__title{
+    margin-bottom: 5px;
+    color: $main-txt-cl;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.9;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 10px;
+        font-size: 50px;
+    }
+}
+
+.header__date{
+    color: $main-txt-cl;
+    font-size: 25px;
+    font-weight: 500;
+    @media screen and (min-width: $tablet) {
+        font-size: 30px;
+    }
+}
+
+.header__logo{
+    width: 120px;
+    height: auto;
+
+    @media screen and (min-width: $tablet) {
+        width: 300px;
+    }
+}
