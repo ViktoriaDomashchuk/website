@@ -31,19 +31,19 @@
     fill: $main-txt-cl;
     margin-right: 20px;
 
-    @media screen and (min-width: $tablet) {
-        width: 30px;
-        height: 30px;
-    }
+    // @media screen and (min-width: $tablet) {
+    //     width: 30px;
+    //     height: 30px;
+    // }
 }
 
 .footer__phone-link{
     font-size: 20px;
     font-weight: 300;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 30px;
-    }
+    // @media screen and (min-width: $tablet) {
+    //     font-size: 30px;
+    // }
 }
 
 
