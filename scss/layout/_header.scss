@@ -2,13 +2,11 @@
     padding-top: 40px;
     padding-bottom: 60px;
     display: flex;
-    gap: 20px;
-
+    justify-content: space-around;
 }
 
 .header__description{
     display: block;
-    margin-left: 30px;
     width: 167px;
     height: auto;
     @media screen and (min-width: $desktop) {
@@ -39,9 +37,13 @@
 }
 
 .header__logo{
-    width: 120px;
-    height: auto;
+    right: 0;
+margin-top: -30px;
+}
 
+.header__img{
+    width: 120px;
+    height: 165px;
     @media screen and (min-width: $tablet) {
         width: 300px;
     }

@@ -1,42 +1,36 @@
 .footer{
-    padding-top: 40px;
-}
-.footer__info{
-    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: $bg-cl;
+    z-index: 25;
 }
 
-.footer__description{
-    margin-left: auto;
-    text-align: right;
-    font-size: 10px;
-    font-weight: 300;
-    width: 120px;
-
-    @media screen and (min-width: $tablet) {
-        margin-left: 0;
-        font-size: 25px;
-        width: 250px;
-    }
-}
 
 .footer__links{
-    padding-top: 30px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .footer__list{
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+}
 
+.footer__links-item{
+        @include flex-calc($indent: 20, $elements: 2);
 }
 
 .footer__links-icon{
     fill: $main-txt-cl;
+    margin-right: 20px;
+
     @media screen and (min-width: $tablet) {
         width: 30px;
         height: 30px;
@@ -46,10 +40,10 @@
 .footer__phone-link{
     font-size: 20px;
     font-weight: 300;
+
     @media screen and (min-width: $tablet) {
         font-size: 30px;
     }
-
 }
 
 
