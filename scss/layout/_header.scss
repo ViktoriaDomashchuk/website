@@ -3,15 +3,21 @@
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
+    
+    @media screen and (min-width: $desktop) {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
 }
 
 .header__description{
     display: block;
     width: 167px;
     height: auto;
-    // @media screen and (min-width: $desktop) {
-    //         width: auto;
-    // }
+
+    @media screen and (min-width: $desktop) {
+        width: auto;
+    }
 }
 
 .header__title{
@@ -22,10 +28,10 @@
     text-transform: uppercase;
     line-height: 0.9;
 
-    // @media screen and (min-width: $tablet) {
-    //     margin-bottom: 10px;
-    //     font-size: 50px;
-    // }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 10px;
+        font-size: 70px;
+    }
 }
 
 .header__date{
@@ -33,21 +39,27 @@
     font-size: 21px;
     font-weight: 500;
 
-    // @media screen and (min-width: $tablet) {
-    //     font-size: 30px;
-    // }
+    @media screen and (min-width: $desktop) {
+        font-size: 30px;
+    }
 }
 
 .header__logo{
     right: 0;
     margin-top: -15px;
     margin-right: -23px;
+
+    @media screen and (min-width: $desktop) {
+        margin-top: -25px;
+    }
 }
 
 .header__img{
     width: 110px;
     height: 125px;
-    // @media screen and (min-width: $tablet) {
-    //     width: 300px;
-    // }
+
+    @media screen and (min-width: $desktop) {
+        width: 300px;
+        height: 140px;
+    }
 }

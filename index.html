@@ -15,7 +15,16 @@
           <p class="header__date">21.12.2022</p>
         </div>
         <div class="header__logo">
-          <img src="./images/header.png" alt="logotype" class="header__img" />
+          <picture class="header__img">
+            <!--Desktop-->
+            <source media="(min-width: 1200px)" srcset="./images/logo.png" type="image/png" />
+            <!--Mobile-->
+            <source media="(max-width: 767px)" srcset="./images/header.png" type="image/png" />
+
+            <!--fallback-->
+            <img src="./images/header.png" alt="logotype" class="header__img" />
+          </picture>
+          <!-- <img src="./images/header.png" alt="logotype" class="header__img" /> -->
         </div>
       </div>
     </header>
@@ -57,16 +66,18 @@
         </ul>
       </div>
       <div class="card"></div>
-      <ul class="list main__info">
-        <li>
-          <a href="" class="link main__logo">
-            <img src="./images/logo.png" alt="logotype" class="main__logo" />
-          </a>
-        </li>
-        <li class="main__description">
-          <p>Обмін валют. Фінансові послуги та консультації.</p>
-        </li>
-      </ul>
+      <div class="main__info-container">
+        <ul class="list main__info">
+          <li>
+            <a href="" class="link main__logo">
+              <img src="./images/logo.png" alt="logotype" class="main__logo" />
+            </a>
+          </li>
+          <li class="main__description">
+            <p>Обмін валют. Фінансові послуги та консультації.</p>
+          </li>
+        </ul>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__links">

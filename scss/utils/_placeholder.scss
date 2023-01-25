@@ -5,10 +5,10 @@
     margin-right: auto;
 
     @media screen and (min-width: $mobile) {
-        width: 480px;
+        width: $mobile;
     }
 
     @media screen and (min-width: $desktop) {
-        width: 1200px;
+        width: $desktop;
     }
 }
