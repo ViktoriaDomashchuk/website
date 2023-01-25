@@ -63,8 +63,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .header__container {
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 250px;
+    padding-left: 250px;
   }
 }
 
@@ -90,7 +90,7 @@ img {
 @media screen and (min-width: 1200px) {
   .header__title {
     margin-bottom: 10px;
-    font-size: 70px;
+    font-size: 50px;
   }
 }
 
@@ -112,7 +112,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .header__logo {
-    margin-top: -25px;
+    margin-top: -5px;
+    margin-right: 0px;
   }
 }
 
@@ -123,7 +124,7 @@ img {
 @media screen and (min-width: 1200px) {
   .header__img {
     width: 300px;
-    height: 140px;
+    height: 80px;
   }
 }
 
@@ -263,9 +264,34 @@ img {
   }
 }
 
-.card {
-  width: 60%;
-  height: auto;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    padding-right: 250px;
+    padding-left: 250px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
+
+.card__img {
+  height: 150px;
+  width: 280px;
+  border-width: 0;
+}
+@media screen and (min-width: 1200px) {
+  .card__img {
+    height: 400px;
+    width: 700px;
+  }
 }
 
 .footer {
