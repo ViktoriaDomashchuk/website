@@ -68,7 +68,6 @@ img {
 
 .header__description {
     display: block;
-    width: 167px;
     height: auto
 }
 
@@ -78,11 +77,23 @@ img {
     }
 }
 
+.header__main-logo{
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .header__main-logo {
+        display: none;
+    }
+}
+
 .header__title {
     margin-bottom: 5px;
     color: gold;
-    font-size: 45px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     text-transform: uppercase;
     line-height: .9
 }
@@ -90,25 +101,27 @@ img {
 @media screen and (min-width: 1200px) {
     .header__title {
         margin-bottom: 10px;
-        font-size: 50px
+        font-size: 50px;
+        font-weight: 700;
     }
 }
 
 .header__date {
     color: gold;
-    font-size: 21px;
-    font-weight: 500
+    font-size: 20px;
+    font-weight: 300;
 }
 
 @media screen and (min-width: 1200px) {
     .header__date {
-        font-size: 30px
+        font-size: 30px;
+        font-weight: 500;
     }
 }
 
 .header__logo {
     right: 0;
-    margin-top: -15px;
+    margin-top: -10px;
     margin-right: -23px
 }
 
@@ -131,14 +144,11 @@ img {
     }
 }
 
-.exchange-rate {
-    padding-top: 30px
-}
-
 @media screen and (min-width: 1200px) {
     .exchange-rate {
         padding-right: 350px;
-        padding-left: 350px
+        padding-left: 350px;
+        padding-top: 30px
     }
 }
 
@@ -161,16 +171,10 @@ img {
 
 .exchange-rate__title-item {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 900;
     text-transform: uppercase;
     color: gold;
-    margin-bottom: 5px
-}
-
-@media screen and (min-width: 1200px) {
-    .exchange-rate__title-item {
-        font-size: 25px
-    }
+    margin-bottom: 5px;
 }
 
 .exchange-rate__list {
@@ -346,7 +350,7 @@ img {
 
 .footer__links-icon {
     fill: gold;
-    margin-right: 20px;
+    margin-right: 15px;
     width: 20px;
     height: 20px
 }
