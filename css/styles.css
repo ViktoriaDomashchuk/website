@@ -166,7 +166,7 @@ img {
     margin-right: auto;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    gap: 100px;
+    gap: 75px;
     min-width: 255px;
 }
 
